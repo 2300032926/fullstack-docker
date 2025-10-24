@@ -22,7 +22,7 @@ const EmployeeManager = () => {
   const [loading, setLoading] = useState(false);
 
   // ✅ Load base URL from .env file
-  const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:8085/employeeapi';
+  const baseUrl =  `${import.meta.env.VITE_API_URL}/employeeapi`;
 
   useEffect(() => {
     fetchAllEmployees();
